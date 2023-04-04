@@ -1,7 +1,59 @@
-header{
-    background-color: rgb(248, 196, 100);
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amita:wght@700&display=swap');
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+  }
+
+  .hero {
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+
+  }
+  
+  .myfont{
+    font-family: 'Roboto', sans-serif;
+    color: darkslategrey;
+  }
+  #subtitulo{
+    font-size:xx-large;
+    color:orange;
+    font-style: italic;
+    font-family: 'Amita', cursive;
+    font-weight: bolder;
+  }
+  #subtitulo2{
+    font-size: xx-large;
+    color: orange;
+    font-weight: bolder;
+    text-align: center;
+    font-style: normal;
+
+  }
+  .right{
+    width: 33%;
+    height: 100px;
+    
 }
-section {
-    background-color: rgb(248, 196, 100);
-    height: 100vh;
+
+
+.left{
+  /*display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 5px;*/
+
+  width: 33%;
+  /*height: 100px;*/
+  
+}
+.center{
+width: 33%;
+}
+.tarjeta{
+  border: 1px solid rgb(167, 167, 165);
+  margin: 10px;
+  border-radius: 2%;
+
 }

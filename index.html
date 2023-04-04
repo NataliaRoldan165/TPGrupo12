@@ -4,45 +4,191 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
+    <!--css propio-->
     <link rel="stylesheet" href="./CSS/estilos.css">
-    <link rel="shortcut icon" href="./imagenes/sombrero-de-cocinero.png" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <title>Dulce & Salado</title>
-</head>
-<body>
+    <!--favicon-icono de la pestaña-->
+    <link rel="shortcut icon" href="https://i.ibb.co/yNTKzM5/Icono-gourmet.png" type="image/x-icon">
+    <!--family fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!--Fontawesone kit-->
+    <script src="https://kit.fontawesome.com/4ae84a4099.js" crossorigin="anonymous"></script>
 
-    <header>
-        <div class="container">
-            <nav class="navbar navbar-expand-sm bg-body-tertiary">
-                <div class="container-fluid">
+    <!-- cargamos el css de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    
+    <title>Gourmet:Comidas caseras</title>
+</head>
+<body class="bg-warning-subtle">
+    
+    <div class="container">
+
+        <!--navbar-->
+        <nav class="navbar navbar-expand-sm bg-body-tertiary sticky-bottom opacity-75">
+            <div class="container-fluid">
                 
-                    <img src="./imagenes/Icono gourmet.png" width=100 alt="logo">
+                <img src="https://i.ibb.co/yNTKzM5/Icono-gourmet.png" width="75"  alt="logo">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav myfont">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Nosotros</a>
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
+                        <a class="nav-link" href="combos.html">Nuestros Combos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contáctanos</a>
                     </li>
                     
                     </ul>
                 </div>
+            </div>
+        </nav>
+
+   
+
+    <!--hero-->
+    <main class="hero">
+      <h1 class="myfont text-center" id="subtitulo" >Comida rica, fresca, saludable y variada!! </h1>    
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                  aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                  aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                  aria-label="Slide 4"></button>
+            </div>
+      
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="https://i.ibb.co/XSRLXr3/plato-ensalada.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Ensaladas frescas</h5>
+                    
+                   </div>
                 </div>
-            </nav>
+      
+                <div class="carousel-item">
+                  <img src="https://i.ibb.co/pfr57q1/platodecarne.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Platos principales</h5>
+                    
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="https://i.ibb.co/pjsLDQY/fideos.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Pastas caseras</h5>
+                    
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="https://i.ibb.co/m65JcJ4/postres.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Postres</h5>
+                    
+                  </div>
+                </div>
+            </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
         </div>
+      
+        
+    </main>    
     
-    </header>
-
-    <section class="comidas">
-
+    <div class="container mt-5">
+      <section class="comidas">
+        <div  class="container mt-3">
+            <h1 class="myfont" id="subtitulo2">Los preferidos</h1>
+            
+            <div class="tarjetas">
+              
+              <img src="https://i.ibb.co/zrmhrvK/1-milanesa-premium.jpg" alt="foto milanesas">
+              <p>Exquisitas milanesas </p>
+            </div>
+            <div class="tarjetas">
+            
+              <img src="https://i.ibb.co/WKd2zXz/1-empanada-criolla.jpg" alt="foto empanadas">
+              <p>Empanadas criollas </p>
+            </div>
+            <div class="tarjetas">
+            
+              <img src="https://i.ibb.co/tCGFNDP/1-prepizza.jpg" alt="foto prepizza">
+              <p>Prepizzas </p>
+            </div>
+            <div class="tarjetas">
+            
+              <img src="https://i.ibb.co/bRyBLN4/1-tarta-individual.jpg" alt="foto tartas">
+              <p>Tartas individuales </p>
+            </div>
+            <div class="tarjetas">
+            
+              <img src="https://i.ibb.co/MRJXSGf/Pastel-de-papa.jpg" alt="foto pastel de papa">
+              <p>Pastel de papas </p>
+            </div>
+            
+        </div>
     </section>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    </div>
+    
+
+    </div>
+    <footer class="d-flex bg-body-tertiary border-top border-bottom myfont text-center">
+      
+        
+          <div class="left">
+            
+            <figure class="text-start float-start ">
+              <img src="https://i.ibb.co/g45W2vq/Negro-C-rculo-con-Cubiertos-Restaurante-Logo.png" width="100" alt=""><a href="index.html"></a>
+            </figure>
+            
+          </div>
+          <div class="center">
+            <p><b>Realizá tu pedido!!</b></p>
+            <p>📞Cel 11 12345678</p>
+          </div>
+          <div class="right">
+            
+              <p>Seguinos en las redes!!</p>
+              
+              <a href="" target="_blank" class="text-opacity-25"><i class="fa-brands fa-facebook fa-xl"></i></a>
+              <a href="" target="_blank" class="text-opacity-25"><i class="fa-brands fa-instagram fa-lg"></i></a>
+              <a href="" target="_blank" class="text-opacity-25"><i class="fa-brands fa-whatsapp fa-lg"></i></a>
+          
+          </div>
+          
+          
+         
+
+    </footer>
+    <div class="text-center text-black">
+      <p>©2023 Cocina Gourmet AP4.0 Grupo12</p>
+    </div>  
+
+    <!-- carga del JavaScript de Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+  crossorigin="anonymous"></script>
 </body>
 </html>

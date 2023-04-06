@@ -1,59 +1,173 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Amita:wght@700&display=swap');
+/*  ********************************** GLOBAL ***********************************   */
+body {
+    color: #783d07;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+	margin-top: 160px;
+}
+a {
+    color: rgba(68, 22, 3, 0.70);
+    font-weight: 400;
+}
+a:hover, a:focus {
+    color: #783d07;
+    opacity: 1;
+}
+h1 {
+    color: orange;
+    font-style: italic;
+    font-family: 'Amita', cursive;
+    font-weight: 700;
+}
+footer {
+    background-color: #fccba5;
+}
+footer a:active i.redes {
+    transform: scale(97%);
+}
+.ls-tight {
+    letter-spacing: -2px;
+}
+/*  ********************************** /  GLOBAL ***********************************   */
+/*  **********************************  NAVBAR  ***********************************   */
+
+nav.navbar {
+	background-color: #faf7ee;
+}
+
+.navbar-nav .nav-link {
+    color: rgba(68, 22, 3, 0.7);
+    font-weight: 400;
+}
+.nav-link:hover, .nav-link:focus {
+    color: #783d07;
+    opacity: 1;
+}
+.navbar-nav a.active, .navbar-nav .nav-link.active {
+    color: #783d07;
+    opacity: 1;
+    font-weight: 500;
+}
+.navbar-nav .nav-link.active::after {
+    content: '';
+    display: block;
+    border-bottom: 1px solid orange;
+}
+.navbar-toggler {
+    border-color: transparent;
+}
+.navbar-toggler:active {
+    transform: scale(95%);
+}
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(68, 22, 3, 0.40)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navbar-toggler-icon:hover {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(68, 22, 3, 0.65)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+/*  ********************************** / NAVBAR  ***********************************   */
 .carousel-caption {
     background-color: rgba(0, 0, 0, 0.6);
     border-radius: 15px;
-  }
-
-  .hero {
+}
+.hero {
     margin-top: 50px;
     margin-left: 50px;
     margin-right: 50px;
-
-  }
-  
-  .myfont{
+}
+.myfont {
     font-family: 'Roboto', sans-serif;
-    color: darkslategrey;
-  }
-  #subtitulo{
-    font-size:xx-large;
-    color:orange;
+    /*    color: darkslategrey; */
+}
+#subtitulo, .subtitulo {
+    /*  font-size: 50px; */
+    color: orange;
     font-style: italic;
     font-family: 'Amita', cursive;
     font-weight: bolder;
-  }
-  #subtitulo2{
+}
+#subtitulo2, .subtitulo2 {
     font-size: xx-large;
     color: orange;
     font-weight: bolder;
     text-align: center;
     font-style: normal;
-
-  }
-  .right{
+}
+.right {
     width: 33%;
     height: 100px;
-    
 }
-
-
-.left{
-  /*display: flex;
+.left {
+    /*display: flex;
   justify-content: center;
   align-items: center;
   column-gap: 5px;*/
+    width: 33%;
+    /*height: 100px;*/
+}
+.center {
+    width: 33%;
+}
+.tarjeta {
+    border: 1px solid rgb(167, 167, 165);
+    margin: 10px;
+    border-radius: 2%;
+}
+/*  ********************************** CSS COMBOS ***********************************   */
+.combos .nav-tabs .nav-link {
+    color: #783d07;
+    opacity: 0.3;
+}
+.combos .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+    border-color: transparent;
+    color: #783d07;
+    opacity: 0.5;
+}
+.combos .nav-tabs .nav-link.active {
+    color: #783d07;
+    opacity: 1;
+    background-color: transparent;
+    border-color: transparent;
+}
+.combos button {
+    text-transform: uppercase;
+}
+.combos .card-title {
+    /* color: #b03d03;*/
+    font-weight: 400;
+}
+.combos .card-title.price {
+    color: #b03d03;
+}
+.combos .card-text {
+    font-weight: 300;
+    opacity: 0.80;
+}
+.combos .card-body .card-title:first-child {
+    min-height: 50px;
+}
+.btn {
+    background-color: #b03d03;
+    color: #fff;
+    transition: all .7s;
+}
+.btn:hover {
+    color: #b03d03;
+    background-color: #fff;
+    border-color: #b03d03;
+}
+.combos .card::after {
+    content: '';
+    display: block;
+    border-bottom: 1px solid #441603;
+    margin-top: 35px;
+    margin-bottom: 55px;
+    opacity: 0.20;
+}
 
-  width: 33%;
-  /*height: 100px;*/
-  
-}
-.center{
-width: 33%;
-}
-.tarjeta{
-  border: 1px solid rgb(167, 167, 165);
-  margin: 10px;
-  border-radius: 2%;
-
-}
+/*  ********************************** /  CSS COMBOS ***********************************   */

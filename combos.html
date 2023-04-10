@@ -1,115 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <!--css propio-->
-    <link rel="stylesheet" href="./CSS/estilos.css">
-    <!--favicon-icono de la pestaña-->
-    <link rel="shortcut icon" href="https://i.ibb.co/yNTKzM5/Icono-gourmet.png" type="image/x-icon">
-    <!--family fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <!--Fontawesone kit-->
-    <script src="https://kit.fontawesome.com/4ae84a4099.js" crossorigin="anonymous"></script>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=, initial-scale=1.0">
+<title>Gourmet: Comidas caseras</title>
 
-    <!-- cargamos el css de Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<!--favicon-icono de la pestaña-->
+<link rel="shortcut icon" href="https://i.ibb.co/yNTKzM5/Icono-gourmet.png" type="image/x-icon">
 
-    
-    <title>Gourmet:Comidas caseras</title>
+<!--Fontawesone kit 
+<script src="https://kit.fontawesome.com/4ae84a4099.js" crossorigin="anonymous"></script> --> 
+<script type="text/javascript" src="js/font-awesome.all.min.js"></script> 
+
+<!-- cargamos el css de Bootstrap 
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">-->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+
+<!--css propio-->
+<link href="css/estilos.css" rel="stylesheet" type="text/css">
 </head>
 <body class="bg-warning-subtle">
-    
-    <div class="container">
 
-        <!--navbar-->
-        <nav class="navbar navbar-expand-sm bg-body-tertiary sticky-bottom opacity-75">
-            <div class="container-fluid">
-                
-                <img src="https://i.ibb.co/yNTKzM5/Icono-gourmet.png" width="75"  alt="logo">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                    <ul class="navbar-nav myfont">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="nosotros.html">Nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="combos.html">Nuestros Combos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">Contáctanos</a>
-                    </li>
-                    
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <div>
-            <h1 id="subtitulo">Nuestros combos</h1>
-
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, consectetur quasi? Eligendi ipsum perferendis pariatur eaque? Impedit eaque ipsum, placeat, natus facere nesciunt, mollitia dolores ab minima labore rem amet!
-            Harum, dolorum? Repudiandae, ullam quo dicta quibusdam rem nulla qui sed, tempora id laborum sint labore magni aliquam porro facilis ipsam odit vero esse cumque! Qui ab rem voluptates impedit!
-            Perferendis odio impedit id tempore animi provident voluptas architecto, magni veniam alias deleniti voluptates laudantium doloribus? Non ratione nihil voluptatem pariatur explicabo, deleniti quos nam aliquam! Illum commodi totam sequi.
-            Aperiam eveniet, eaque assumenda a culpa, placeat architecto vel porro nobis eum in ipsam? Modi libero porro delectus, saepe pariatur numquam qui maxime praesentium, quos aspernatur, laboriosam itaque voluptatem quasi.
-            Culpa consequuntur, voluptates odio, delectus repellat quam reiciendis eum porro explicabo aperiam laboriosam placeat in aut voluptas dolores perferendis autem totam obcaecati mollitia numquam? Dolorem, iusto inventore? Repellat, esse laudantium.</p>
-    
-
-        </div>
-        
-    <div>
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias asperiores perspiciatis culpa corporis consectetur rem beatae esse possimus recusandae maiores. Saepe dignissimos, commodi quisquam exercitationem consequatur voluptatem fugit culpa explicabo?
-        Aliquam facilis vitae officiis quidem soluta repellat pariatur totam ea illum. Id dignissimos sapiente illo, excepturi atque nihil perferendis voluptates, cumque vitae nesciunt nemo, aliquid dolorum beatae cum dolor distinctio?
-        Delectus perferendis laudantium magnam ipsam eos reprehenderit doloremque modi assumenda, ut nihil harum obcaecati fugiat, nemo, nesciunt dolores et. Qui tenetur ea est nam quo, officia nesciunt molestias mollitia libero.</p>
-    
-        
-
+<!--navbar-->
+<nav class="navbar navbar-expand-sm pt-2 pb-0 mb-5 fixed-top">
+  <div class="container-fluid"><a href="index.html"><img class="navbar-brand" src="img/isologo-gourmet.png" width="110" alt="Dulce y Salado Gourmet" title="Dulce y Salado Gourmet"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+    <div class="collapse navbar-collapse justify-content-center mb-2 mb-sm-0" id="navbarNav">
+      <ul class="navbar-nav me-sm-5 pe-sm-5 text-uppercase">
+        <li class="nav-item"> <a class="nav-link" href="index.html">Inicio</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="nosotros.html">Nosotros</a> </li>
+        <li class="nav-item"> <a class="nav-link active" aria-current="page" href="combos.html">Nuestros Combos</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="contacto.html">Contáctanos</a> </li>
+      </ul>
     </div>
-        
+  </div>
+</nav>
+<div class="container combos">
+  <h1 class="text-center display-3 ls-tight text-capitalize pt-5">Nuestros combos</h1>
+  <nav class="mb-5 pb-2">
+    <div class="nav nav-tabs justify-content-center h1 fw-light border-0" id="nav-tab" role="tablist">
+      <button class="nav-link active" id="nav-combos-clasicos-tab" data-bs-toggle="tab" data-bs-target="#nav-combos-clasicos" type="button" role="tab" aria-controls="nav-combos-clasicos" aria-selected="true">Clásicos</button>
+      <button class="nav-link" id="nav-combos-vegetarianos-tab" data-bs-toggle="tab" data-bs-target="#nav-combos-vegetarianos" type="button" role="tab" aria-controls="nav-combos-vegetarianos" aria-selected="false">Vegetarianos</button>
+      <button class="nav-link" id="nav-combos-bajs-calorias-tab" data-bs-toggle="tab" data-bs-target="#nav-combos-bajs-calorias" type="button" role="tab" aria-controls="nav-combos-bajs-calorias" aria-selected="false">Bajas Calorías</button>
+    </div>
+  </nav>
+  <div class="row">
+    <div class="col-12 col-md-10 offset-md-1">
+      <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="nav-combos-clasicos" role="tabpanel" aria-labelledby="nav-combos-clasicos-tab" tabindex="0">
+          <div class="row gx-5">
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="card bg-transparent border-0"> <img src="img/combos/clasicos/clasico-1.jpg" class="card-img-top rounded-3" title="Clásico 1" alt="Clásico 1">
+                <div class="card-body">
+                  <h5 class="card-title">Crepes De Albahaca Y Muzzarella</h5>
+                  <h5 class="card-title price">$1500.-</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod.</p>
+                  <a href="https://wa.me/5491112345678?text=Hola,%20estoy%20interesado%20en%20pedir%20el%20plato:%200001" class="btn" title="Realizar pedido por WhatsApp"><i class="fa-brands fa-whatsapp fa-xl me-2"></i>Realizar Pedido</a> </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="card bg-transparent border-0"> <img src="img/combos/clasicos/clasico-2.jpg" class="card-img-top rounded-3" title="Clásico 2" alt="Clásico 2">
+                <div class="card-body">
+                  <h5 class="card-title">Pan De Carne</h5>
+                  <h5 class="card-title price">$1500.-</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod.</p>
+                  <a href="https://wa.me/5491112345678?text=Hola,%20estoy%20interesado%20en%20pedir%20el%20plato:%200001" class="btn" title="Realizar pedido por WhatsApp"><i class="fa-brands fa-whatsapp fa-xl me-2"></i>Realizar Pedido</a> </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="card bg-transparent border-0"> <img src="img/combos/clasicos/clasico-3.jpg" class="card-img-top rounded-3" title="Clásico 3" alt="Clásico 3">
+                <div class="card-body">
+                  <h5 class="card-title">Macarones Con Queso</h5>
+                  <h5 class="card-title price">$1500.-</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod.</p>
+                  <a href="https://wa.me/5491112345678?text=Hola,%20estoy%20interesado%20en%20pedir%20el%20plato:%200001" class="btn" title="Realizar pedido por WhatsApp"><i class="fa-brands fa-whatsapp fa-xl me-2"></i>Realizar Pedido</a> </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="card bg-transparent border-0"> <img src="img/combos/clasicos/clasico-4.jpg" class="card-img-top rounded-3" title="Clásico 4" alt="Clásico 4">
+                <div class="card-body">
+                  <h5 class="card-title">Pollo Especiado</h5>
+                  <h5 class="card-title price">$1500.-</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod.</p>
+                  <a href="https://wa.me/5491112345678?text=Hola,%20estoy%20interesado%20en%20pedir%20el%20plato:%200001" class="btn" title="Realizar pedido por WhatsApp"><i class="fa-brands fa-whatsapp fa-xl me-2"></i>Realizar Pedido</a> </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="card bg-transparent border-0"> <img src="img/combos/clasicos/clasico-5.jpg" class="card-img-top rounded-3" title="Clásico 5" alt="Clásico 5">
+                <div class="card-body">
+                  <h5 class="card-title">Wok De Pollo Con Arroz</h5>
+                  <h5 class="card-title price">$1500.-</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod.</p>
+                  <a href="https://wa.me/5491112345678?text=Hola,%20estoy%20interesado%20en%20pedir%20el%20plato:%200001" class="btn" title="Realizar pedido por WhatsApp"><i class="fa-brands fa-whatsapp fa-xl me-2"></i>Realizar Pedido</a> </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="card bg-transparent border-0"> <img src="img/combos/clasicos/clasico-6.jpg" class="card-img-top rounded-3" title="Clásico 6" alt="Clásico 6">
+                <div class="card-body">
+                  <h5 class="card-title">Risotto De Zanahoria, Arvejas Y Jamon</h5>
+                  <h5 class="card-title price">$1500.-</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod.</p>
+                  <a href="https://wa.me/5491112345678?text=Hola,%20estoy%20interesado%20en%20pedir%20el%20plato:%200001" class="btn" title="Realizar pedido por WhatsApp"><i class="fa-brands fa-whatsapp fa-xl me-2"></i>Realizar Pedido</a> </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="nav-combos-vegetarianos" role="tabpanel" aria-labelledby="nav-combos-vegetarianos-tab" tabindex="0">
+          <div class="row gx-5">
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="card bg-transparent border-0"> <img src="img/combos/vegetarianos/vegetariano-1.jpg" class="card-img-top rounded-3" title="Vegetariano 1" alt="Vegetariano 1">
+                <div class="card-body">
+                  <h5 class="card-title">Pollo A La Mostaza</h5>
+                  <h5 class="card-title price">$1500.-</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod.</p>
+                  <a href="https://wa.me/5491112345678?text=Hola,%20estoy%20interesado%20en%20pedir%20el%20plato:%200001" class="btn" title="Realizar pedido por WhatsApp"><i class="fa-brands fa-whatsapp fa-xl me-2"></i>Realizar Pedido</a> </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="card bg-transparent border-0"> <img src="img/combos/vegetarianos/vegetariano-2.jpg" class="card-img-top rounded-3" title="Vegetariano 2" alt="Vegetariano 2">
+                <div class="card-body">
+                  <h5 class="card-title">Wok De Pollo Con Arroz</h5>
+                  <h5 class="card-title price">$1500.-</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod.</p>
+                  <a href="https://wa.me/5491112345678?text=Hola,%20estoy%20interesado%20en%20pedir%20el%20plato:%200001" class="btn" title="Realizar pedido por WhatsApp"><i class="fa-brands fa-whatsapp fa-xl me-2"></i>Realizar Pedido</a> </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="card bg-transparent border-0"> <img src="img/combos/vegetarianos/vegetariano-3.jpg" class="card-img-top rounded-3" title="Vegetariano 3" alt="Vegetariano 3">
+                <div class="card-body">
+                  <h5 class="card-title">Risotto De Zanahoria, Arvejas Y Jamon</h5>
+                  <h5 class="card-title price">$1500.-</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod.</p>
+                  <a href="https://wa.me/5491112345678?text=Hola,%20estoy%20interesado%20en%20pedir%20el%20plato:%200001" class="btn" title="Realizar pedido por WhatsApp"><i class="fa-brands fa-whatsapp fa-xl me-2"></i>Realizar Pedido</a> </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="card bg-transparent border-0"> <img src="img/combos/vegetarianos/vegetariano-4.jpg" class="card-img-top rounded-3" title="Vegetariano 4" alt="Vegetariano 4">
+                <div class="card-body">
+                  <h5 class="card-title">Pan De Carne</h5>
+                  <h5 class="card-title price">$1500.-</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod.</p>
+                  <a href="https://wa.me/5491112345678?text=Hola,%20estoy%20interesado%20en%20pedir%20el%20plato:%200001" class="btn" title="Realizar pedido por WhatsApp"><i class="fa-brands fa-whatsapp fa-xl me-2"></i>Realizar Pedido</a> </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="card bg-transparent border-0"> <img src="img/combos/vegetarianos/vegetariano-5.jpg" class="card-img-top rounded-3" title="Vegetariano 5" alt="Vegetariano 5">
+                <div class="card-body">
+                  <h5 class="card-title">Pollo Especiado</h5>
+                  <h5 class="card-title price">$1500.-</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod.</p>
+                  <a href="https://wa.me/5491112345678?text=Hola,%20estoy%20interesado%20en%20pedir%20el%20plato:%200001" class="btn" title="Realizar pedido por WhatsApp"><i class="fa-brands fa-whatsapp fa-xl me-2"></i>Realizar Pedido</a> </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="card bg-transparent border-0"> <img src="img/combos/vegetarianos/vegetariano-6.jpg" class="card-img-top rounded-3" title="Vegetariano 6" alt="Vegetariano 6">
+                <div class="card-body">
+                  <h5 class="card-title">Macarones Con Queso</h5>
+                  <h5 class="card-title price">$1500.-</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod.</p>
+                  <a href="https://wa.me/5491112345678?text=Hola,%20estoy%20interesado%20en%20pedir%20el%20plato:%200001" class="btn" title="Realizar pedido por WhatsApp"><i class="fa-brands fa-whatsapp fa-xl me-2"></i>Realizar Pedido</a> </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="card bg-transparent border-0"> <img src="img/combos/vegetarianos/vegetariano-7.jpg" class="card-img-top rounded-3" title="Vegetariano 7" alt="Vegetariano 7">
+                <div class="card-body">
+                  <h5 class="card-title">Crepes De Albahaca Y Muzzarella</h5>
+                  <h5 class="card-title price">$1500.-</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod.</p>
+                  <a href="https://wa.me/5491112345678?text=Hola,%20estoy%20interesado%20en%20pedir%20el%20plato:%200001" class="btn" title="Realizar pedido por WhatsApp"><i class="fa-brands fa-whatsapp fa-xl me-2"></i>Realizar Pedido</a> </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="nav-combos-bajs-calorias" role="tabpanel" aria-labelledby="nav-combos-bajs-calorias-tab" tabindex="0">
+          <div class="row gx-5">
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="card bg-transparent border-0"> <img src="img/combos/bajas-calorias/bajas-calorias-1.jpg" class="card-img-top rounded-3" title="Bajas Calorías 1" alt="Bajas Calorías 1">
+                <div class="card-body">
+                  <h5 class="card-title">Wok De Pollo Con Arroz</h5>
+                  <h5 class="card-title price">$1500.-</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod.</p>
+                  <a href="https://wa.me/5491112345678?text=Hola,%20estoy%20interesado%20en%20pedir%20el%20plato:%200001" class="btn" title="Realizar pedido por WhatsApp"><i class="fa-brands fa-whatsapp fa-xl me-2"></i>Realizar Pedido</a> </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="card bg-transparent border-0"> <img src="img/combos/bajas-calorias/bajas-calorias-2.jpg" class="card-img-top rounded-3" title="Bajas Calorías 2" alt="Bajas Calorías 2">
+                <div class="card-body">
+                  <h5 class="card-title">Risotto De Zanahoria, Arvejas Y Jamón</h5>
+                  <h5 class="card-title price">$1500.-</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod.</p>
+                  <a href="https://wa.me/5491112345678?text=Hola,%20estoy%20interesado%20en%20pedir%20el%20plato:%200001" class="btn" title="Realizar pedido por WhatsApp"><i class="fa-brands fa-whatsapp fa-xl me-2"></i>Realizar Pedido</a> </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="card bg-transparent border-0"> <img src="img/combos/bajas-calorias/bajas-calorias-3.jpg" class="card-img-top rounded-3" title="Bajas Calorías 3" alt="Bajas Calorías 3">
+                <div class="card-body">
+                  <h5 class="card-title">Pan De Carne</h5>
+                  <h5 class="card-title price">$1500.-</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod.</p>
+                  <a href="https://wa.me/5491112345678?text=Hola,%20estoy%20interesado%20en%20pedir%20el%20plato:%200001" class="btn" title="Realizar pedido por WhatsApp"><i class="fa-brands fa-whatsapp fa-xl me-2"></i>Realizar Pedido</a> </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="card bg-transparent border-0"> <img src="img/combos/bajas-calorias/bajas-calorias-4.jpg" class="card-img-top rounded-3" title="Bajas Calorías 4" alt="Bajas Calorías 4">
+                <div class="card-body">
+                  <h5 class="card-title">Crepes De Albahaca Y Muzzarella</h5>
+                  <h5 class="card-title price">$1500.-</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod.</p>
+                  <a href="https://wa.me/5491112345678?text=Hola,%20estoy%20interesado%20en%20pedir%20el%20plato:%200001" class="btn" title="Realizar pedido por WhatsApp"><i class="fa-brands fa-whatsapp fa-xl me-2"></i>Realizar Pedido</a> </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="card bg-transparent border-0"> <img src="img/combos/bajas-calorias/bajas-calorias-5.jpg" class="card-img-top rounded-3" title="Bajas Calorías 5" alt="Bajas Calorías 5">
+                <div class="card-body">
+                  <h5 class="card-title">Pollo A La Mostaza</h5>
+                  <h5 class="card-title price">$1500.-</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod. </p>
+                  <a href="https://wa.me/5491112345678?text=Hola,%20estoy%20interesado%20en%20pedir%20el%20plato:%200001" class="btn" title="Realizar pedido por WhatsApp"><i class="fa-brands fa-whatsapp fa-xl me-2"></i>Realizar Pedido</a> </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-<footer class="d-flex bg-body-tertiary border-top border-bottom myfont text-center">
-  
-    
-      <div class="left">
-        
-        <figure class="text-start float-start ">
-          <img src="https://i.ibb.co/g45W2vq/Negro-C-rculo-con-Cubiertos-Restaurante-Logo.png" width="100" alt=""><a href="index.html"></a>
-        </figure>
-        
+<footer class="mt-5 py-5 text-center">
+  <div class="container-fluid">
+    <div class="row align-items-center">
+      <div class="col-12 col-sm-4 mb-4 mb-sm-0">
+        <figure class="float-sm-start m-0"> <a href="index.html"><img src="img/img-footer-cocina-gournet.png" width="95" alt="Dulce y Salado Gourmet" title="Dulce y Salado Gourmet"></a> </figure>
       </div>
-      <div class="center">
-        <p><b>Realizá tu pedido!!</b></p>
-        <p>📞Cel 11 12345678</p>
-      </div>
-      <div class="right">
-        
-          <p>Seguinos en las redes!!</p>
-          
-          <a href="" target="_blank" class="text-opacity-25"><i class="fa-brands fa-facebook fa-xl"></i></a>
-          <a href="" target="_blank" class="text-opacity-25"><i class="fa-brands fa-instagram fa-lg"></i></a>
-          <a href="" target="_blank" class="text-opacity-25"><i class="fa-brands fa-whatsapp fa-lg"></i></a>
-      
-      </div>
-      
-      
-     
-
+      <div class="col-12 col-sm-4 mb-4 mb-sm-0">
+        <p class="mb-1 lead fw-medium">Realizá tu pedido!!</p>
+        <a href="https://wa.me/5491112345678?text=Hola,%20estoy%20interesado%20en%20pedir%20un%20plato." class="text-decoration-none" title="WhatsApp"><i class="fa-brands fa-whatsapp fa-xl me-2"></i>+54 9 11 1234-5678</a> </div>
+      <div class="col-12 col-sm-4 mb-4 mb-sm-0">
+        <p class="mb-1 lead fw-medium">Seguinos en las redes!!</p>
+        <a href="https://www.facebook.com/" target="_blank" class="text-opacity-25 px-1" title="Facebook"><i class="redes fa-brands fa-facebook fa-xl"></i></a> <a href="https://www.instagram.com/" target="_blank" class="text-opacity-25 px-1" title="Instagram"><i class="redes fa-brands fa-instagram fa-xl"></i></a> <a href="https://www.tiktok.com/" target="_blank" class="text-opacity-25 px-1" title="TikTok"><i class="redes fa-brands fa-tiktok fa-lg"></i></a> </div>
+    </div>
+  </div>
 </footer>
-<div class="text-center text-black">
-  <p>©2023 Cocina Gourmet AP4.0 Grupo12</p>
-</div>  
+<div class="text-center">
+  <p class="opacity-70 mt-2"><small>©2023 Cocina Gourmet AP4.0 Grupo12</small></p>
+</div>
 
-<!-- carga del JavaScript de Bootstrap -->
+<!-- carga del JavaScript de Bootstrap  
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
 integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-crossorigin="anonymous"></script>
+crossorigin="anonymous"></script> --> 
+
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
 </body>
 </html>

@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Amita:wght@700&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Amita:wght@700&display=swap');
 /*  ********************************** GLOBAL ***********************************   */
 body {
     color: #783d07;
@@ -31,10 +31,11 @@ footer a:active i.redes {
 .ls-tight {
     letter-spacing: -2px;
 }
-.btn {
+.btn, .btn:focus {
     background-color: #b03d03;
     color: #fff;
     transition: all .7s;
+    opacity: 1;
 }
 .btn:hover {
     color: #b03d03;
@@ -73,6 +74,11 @@ footer a:active i.redes {
     .flex-md-equal > * {
         flex: 1;
     }
+}
+.input-number-no-arrows {
+    -webkit-appearance: none;
+    margin: 0;
+    -moz-appearance: textfield;
 }
 /*  ********************************** /  GLOBAL ***********************************   */
 /*  **********************************  NAVBAR  ***********************************   */
@@ -167,54 +173,15 @@ h3::after {
     right: -37px;
 }
 .box {
-    --mask:
+    mask:
         radial-gradient(18.93px at 50% calc(100% - 26.40px), #000 99%, #0000 101%) calc(50% - 22px) 0/44px 100%, radial-gradient(18.93px at 50% calc(100% + 15.40px), #0000 99%, #000 101%) 50% calc(100% - 11px)/44px 100% repeat-x;
-    -webkit-mask: var(--mask);
-    mask: var(--mask);
+    -webkit-mask: radial-gradient(18.93px at 50% calc(100% - 26.40px), #000 99%, #0000 101%) calc(50% - 22px) 0/44px 100%, radial-gradient(18.93px at 50% calc(100% + 15.40px), #0000 99%, #000 101%) 50% calc(100% - 11px)/44px 100% repeat-x;
 }
 /*  **********************************  /  PREFERIDOS ***********************************   */
 .hero {
     margin-top: 50px;
     margin-left: 50px;
     margin-right: 50px;
-}
-.myfont {
-    font-family: 'Roboto', sans-serif;
-    /*    color: darkslategrey; */
-}
-#subtitulo, .subtitulo {
-    /*  font-size: 50px; */
-    color: orange;
-    font-style: italic;
-    font-family: 'Amita', cursive;
-    font-weight: bolder;
-}
-#subtitulo2, .subtitulo2 {
-    font-size: xx-large;
-    color: orange;
-    font-weight: bolder;
-    text-align: center;
-    font-style: normal;
-}
-.right {
-    width: 33%;
-    height: 100px;
-}
-.left {
-    /*display: flex;
-  justify-content: center;
-  align-items: center;
-  column-gap: 5px;*/
-    width: 33%;
-    /*height: 100px;*/
-}
-.center {
-    width: 33%;
-}
-.tarjeta {
-    border: 1px solid rgb(167, 167, 165);
-    margin: 10px;
-    border-radius: 2%;
 }
 /*  ********************************** CSS COMBOS ***********************************   */
 .combos .nav-tabs .nav-link {

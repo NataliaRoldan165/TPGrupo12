@@ -1,62 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <!--css propio-->
-    <link rel="stylesheet" href="./CSS/estilos.css">
-    <!--favicon-icono de la pestaña-->
-    <link rel="shortcut icon" href="https://i.ibb.co/yNTKzM5/Icono-gourmet.png" type="image/x-icon">
-    <!--family fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <!--Fontawesone kit-->
-    <script src="https://kit.fontawesome.com/4ae84a4099.js" crossorigin="anonymous"></script>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=, initial-scale=1.0">
+<title>Gourmet: Comidas caseras</title>
 
-    <!-- cargamos el css de Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<!--favicon-icono de la pestaña-->
+<link rel="shortcut icon" href="https://i.ibb.co/yNTKzM5/Icono-gourmet.png" type="image/x-icon">
 
-    
-    <title>Gourmet:Comidas caseras</title>
+<!--Fontawesone kit 
+<script src="https://kit.fontawesome.com/4ae84a4099.js" crossorigin="anonymous"></script> --> 
+<script type="text/javascript" src="js/font-awesome.all.min.js"></script> 
+<!-- cargamos el css de Bootstrap 
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">-->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+
+<!--css propio-->
+<link href="css/estilos.css" rel="stylesheet" type="text/css">
 </head>
 <body class="bg-warning-subtle">
-    
-    <div class="container">
-
-        <!--navbar-->
-        <nav class="navbar navbar-expand-sm bg-body-tertiary sticky-bottom opacity-75">
-            <div class="container-fluid">
-                
-                <img src="https://i.ibb.co/yNTKzM5/Icono-gourmet.png" width="75"  alt="logo">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                    <ul class="navbar-nav myfont">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="nosotros.html">Nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="combos.html">Nuestros Combos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">Contáctanos</a>
-                    </li>
-                    
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <div class="container ">
-            <h1 id="subtitulo2">Contacto</h1>
-
-            <form >
+<div class="container"> 
+  
+  <!--navbar-->
+  <nav class="navbar navbar-expand-sm pt-2 pb-0 mb-5 fixed-top">
+    <div class="container-fluid"><a href="index.html"><img class="navbar-brand" src="img/isologo-gourmet.png" width="110" alt="Dulce y Salado Gourmet" title="Dulce y Salado Gourmet"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+      <div class="collapse navbar-collapse justify-content-center mb-2 mb-sm-0" id="navbarNav">
+        <ul class="navbar-nav me-sm-5 pe-sm-5 text-uppercase">
+          <li class="nav-item"> <a class="nav-link" href="index.html">Inicio</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="nosotros.html">Nosotros</a> </li>
+          <li class="nav-item"> <a class="nav-link"  href="combos.html">Nuestros Combos</a> </li>
+          <li class="nav-item"> <a class="nav-link active" aria-current="page" href="contacto.html">Contáctanos</a> </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <h1 class="text-center display-3 ls-tight text-capitalize mb-4 pt-5">Contactanos</h1>
+  
+  <!--     <form >
 
                 <div>
                     <label for="fullname">Nombre completo</label>
@@ -83,53 +66,66 @@
                 <p>- Hace tu pedido con 24hs de anticipación</p> 
                 <p>- Repartimos siempre de 18 a 21hs por cualquier problema comunícate por whatsapp</p>
         
-            </div>
-
-            
-
-        </div>
-        
-    </div>
-
-<footer class="d-flex bg-body-tertiary border-top border-bottom myfont text-center">
+            </div>-->
   
-    
-      <div class="left">
-        
-        <figure class="text-start float-start ">
-          <img src="https://i.ibb.co/g45W2vq/Negro-C-rculo-con-Cubiertos-Restaurante-Logo.png" width="100" alt=""><a href="index.html"></a>
-        </figure>
-        
+  <div class="row">
+    <div class="col-10 offset-1 col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-4 offset-md-4">
+      <form role="form" class="mb-5" id="Formulario">
+        <div class="row">
+          <div class="form-group mb-3">
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" class="form-control" required/>
+          </div>
+          <div class="form-group mb-3">
+            <label for="apellido">Apellido</label>
+            <input type="text" name="apellido" id="apellido" class="form-control" required/>
+          </div>
+          <div class="form-group mb-3">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" class="form-control" required/>
+          </div>
+          <div class="form-group mb-3">
+            <label for="telefono">Teléfono</label>
+            <input type="text" name="telefono" id="telefono" class="form-control" required/>
+          </div>
+          <div class="form-group mb-4">
+            <label for="mensaje">Mensaje</label>
+            <textarea type="text" name="mensaje" id="mensaje" class="form-control" required></textarea>
+          </div>
+          <div class="form-group text-start">
+            <button id="borrar" type="reset" class="btn btn-outline ps-4 pe-4 me-2">BORRAR</button>
+            <button id="enviar" type="submit" class="btn ps-4 pe-4">ENVIAR</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<footer class="mt-5 py-5 text-center">
+  <div class="container-fluid">
+    <div class="row align-items-center">
+      <div class="col-12 col-sm-4 mb-4 mb-sm-0">
+        <figure class="float-sm-start m-0"> <a href="index.html"><img src="img/img-footer-cocina-gournet.png" width="95" alt="Dulce y Salado Gourmet" title="Dulce y Salado Gourmet"></a> </figure>
       </div>
-      <div class="center">
-        <p><b>Realizá tu pedido!!</b></p>
-        <p>📞Cel 11 12345678</p>
-      </div>
-      <div class="right">
-        
-          <p>Seguinos en las redes!!</p>
-          
-          <a href="" target="_blank" class="text-opacity-25"><i class="fa-brands fa-facebook fa-xl"></i></a>
-          <a href="" target="_blank" class="text-opacity-25"><i class="fa-brands fa-instagram fa-lg"></i></a>
-          <a href="" target="_blank" class="text-opacity-25"><i class="fa-brands fa-whatsapp fa-lg"></i></a>
-      
-      </div>
-      
-      
-     
-
+      <div class="col-12 col-sm-4 mb-4 mb-sm-0">
+        <p class="mb-1 lead fw-medium">Realizá tu pedido!!</p>
+        <a href="https://wa.me/5491112345678?text=Hola,%20estoy%20interesado%20en%20pedir%20un%20plato." class="text-decoration-none" title="WhatsApp"><i class="fa-brands fa-whatsapp fa-xl me-2"></i>+54 9 11 1234-5678</a> </div>
+      <div class="col-12 col-sm-4 mb-4 mb-sm-0">
+        <p class="mb-1 lead fw-medium">Seguinos en las redes!!</p>
+        <a href="https://www.facebook.com/" target="_blank" class="text-opacity-25 px-1" title="Facebook"><i class="redes fa-brands fa-facebook fa-xl"></i></a> <a href="https://www.instagram.com/" target="_blank" class="text-opacity-25 px-1" title="Instagram"><i class="redes fa-brands fa-instagram fa-xl"></i></a> <a href="https://www.tiktok.com/" target="_blank" class="text-opacity-25 px-1" title="TikTok"><i class="redes fa-brands fa-tiktok fa-lg"></i></a> </div>
+    </div>
+  </div>
 </footer>
 <div class="text-center text-black">
   <p>©2023 Cocina Gourmet AP4.0 Grupo12</p>
 </div>  
 
-
-<!-- Agrego el codigo para la seccion contacto-->
-<script src="./app_Contacto.js"></script>
-
-<!-- carga del JavaScript de Bootstrap -->
+<!-- carga del JavaScript de Bootstrap  
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
 integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-crossorigin="anonymous"></script>
+crossorigin="anonymous"></script> --> 
+
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script src="./js/app_Contacto.js"></script>
 </body>
 </html>

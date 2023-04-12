@@ -1,7 +1,6 @@
 Temas pendientes
 
-Todas las pages --->acomodar en el footer el tamaño de la letra cuando está en tamaño sm (movil)
-Page combos.html --->incorporar los combos tipo flyer
+
 Page contacto.html---> hacer el diseño: que datos pedimos (mostrarlos)
 Page nosotros.html---> terminarla
 

@@ -24,4 +24,77 @@ function Envio_de_Informacion_de_Contacto()
         console.log(Correo_Electronico_Ingresado.value);
         console.log(Telefono_Ingresado.value);
         console.log(Texto_Ingresado.value);
-    }
+    };
+ /***************************************** */
+ const nombre =document.getElementById("nombre");
+const apellido =document.getElementById("apellido");
+const email =document.getElementById("email");
+const telefono =document.getElementById("telefono");
+const mensaje =document.getElementById("mensaje");
+const borrar =document.getElementById("borrar");
+const enviar =document.getElementById("enviar");
+const formulario= document.getElementById("formContacto");
+const formContacto = document.getElementById("form-contacto");//Modal
+const formModal = document.getElementById("formModal");
+const btnConfirmaModal = document.getElementById("confirmaModal");
+let modalInstance = null;
+
+document.querySelector('form').addEventListener('submit',(event)=>{
+    event.preventDefault();
+    console.log("hago enviar");
+    console.log(nombre.value);
+     
+});
+    
+    
+if (formModal) {
+    formModal.addEventListener("show.bs.modal", event => {
+
+        modalInstance = bootstrap.Modal.getInstance(formModal);
+
+        
+        const inputNombre = formModal.querySelector("#nombre")
+        const inputApellido = formModal.querySelector("#apellido")
+        const inputEmail = formModal.querySelector("#email")
+        const inputTelefono = formModal.querySelector("#telefono")
+        const inputComentario = formModal.querySelector("#comentario")
+
+      //completo los inputs con los datos del formulario de contacto
+        inputNombre.value = nombre.value;
+        inputApellido.value = apellido.value;
+        inputEmail.value = email.value;
+        inputTelefono.value = telefono.value;
+        inputComentario.value = mensaje.value;
+    })
+};
+
+btnConfirmaModal.addEventListener("click", function(){
+    modalInstance.hide();
+    formulario.reset();
+
+});
+
+
+/*Valida(f){
+    let correcto=true;
+    if (nombre.value==''){
+        correcto=false;
+    };
+    if (apellido.value==''){
+        correcto=false;
+    };
+    if (email.value==''){
+        correcto=false;
+    };
+    if (telefono.value==''){
+        correcto=false;
+    };
+    if (mensaje.value==''){
+        correcto=false;
+    };
+    if(!correcto){
+        alert('Complete todos los campos');
+        };
+    return correcto;
+};*/
+   
